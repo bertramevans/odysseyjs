@@ -85,7 +85,7 @@ function Gist(md, template, callback) {
       },
     };
 
-    d3.xhr("https://api.github.com/gists")
+    d3.xhr("https://raw.githubusercontent.com/bertramevans/test4/main/api_github_com_gist.json")
       .header("Content-Type", "application/json")
       .post(JSON.stringify(payload), function (err, xhr) {
         gist = JSON.parse(xhr.responseText);
