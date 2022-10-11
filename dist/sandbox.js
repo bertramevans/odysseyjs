@@ -700,7 +700,8 @@
                 },
               };
 
-              d3.xhr("https://raw.githubusercontent.com/bertramevans/test4/main/api_github_com_gist.json")
+              // d3.xhr("https://raw.githubusercontent.com/bertramevans/test4/main/api_github_com_gist.json")
+              d3.json("api_github_com_gist.json")
                 .header("Content-Type", "application/json")
                 .post(JSON.stringify(payload), function (err, xhr) {
                   gist = JSON.parse(xhr.responseText);
