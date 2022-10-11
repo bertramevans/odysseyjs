@@ -706,7 +706,9 @@
                 .get(JSON.stringify(payload), function (err, xhr) {
                   gist = JSON.parse(xhr.responseText);
                   var BLOCKS = "https://bl.ocks.org/anonymous/raw/";
-                  // console.log(gist);
+                  console.log("=========================================");
+                  console.log("sandbox.js");
+                  console.log(gist);
                   callback({
                     url: gist.url,
                     html_url: BLOCKS + gist.id,
